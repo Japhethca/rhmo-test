@@ -27,8 +27,7 @@ class ApiService {
       {
         headers: {
           // This is not meant to be here, just a work around
-          Authorization:
-            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNTk0MTgzMzUwLCJleHAiOjE1OTY3NzUzNTB9.SS17FWeuomLQxAqyIEiPk0hTjLcKjh91XpM6U2X7dkM",
+          Authorization: "Bearer {auth_token}", // replace auth token with the action authentication token
         },
       }
     );
@@ -50,8 +49,7 @@ class ApiService {
       headers: {
         ...headers,
         // This is not meant to be here, just a work around
-        Authorization:
-          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNTk0MTgzMzUwLCJleHAiOjE1OTY3NzUzNTB9.SS17FWeuomLQxAqyIEiPk0hTjLcKjh91XpM6U2X7dkM",
+        Authorization: "Bearer {auth_token}", // replace auth token with the action authentication token
       },
     });
     return response.json();
